@@ -27,9 +27,6 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-/* header {
-  background-color: rgba(0, 0, 0, 0.822);
-} */
 
 a {
   text-decoration: none;
@@ -92,6 +89,7 @@ input[type="text"] {
 }
 
 input[type="button"] {
+  cursor: pointer;
   padding: 12px 10px;
 }
 
@@ -116,10 +114,6 @@ input[type="button"] {
 .hero-img {
   margin-left: 20px;
 }
-
-/* .container {
-  
-} */
 
 .resultContainer {
   align-items: center;

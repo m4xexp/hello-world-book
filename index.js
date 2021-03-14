@@ -1,4 +1,3 @@
-const searchBtn = document.getElementById("search-btn");
 const searchBar = document.querySelector("#search-bar");
 const resultContainer = document.querySelector(".resultContainer");
 
@@ -14,8 +13,6 @@ searchBar.addEventListener("keypress", function (e) {
 function setLoading(visible) {
   document.querySelector(".loading").style.display = visible ? "block" : "none";
 }
-
-searchBtn.addEventListener("click", FetchData);
 
 function validate() {
   const regex = /^[A-Za-z0-9 ]+$/;
