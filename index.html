@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HelloBook</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
-      <div class="nav">
+      <!-- <div class="loading">
+        <img src="" alt="">
+      </div> -->
+      <div class="nav" id="nav">
         <div class="nav-logo">
           <a
             href="
@@ -19,14 +23,12 @@
           </a>
         </div>
         <div class="nav-link">
-          <a href="#" class="nav-link-element">Hello</a>
-          <a href="#" class="nav-link-element">Home</a>
           <a href="#" class="nav-link-element">About</a>
         </div>
       </div>
       <div class="hero">
         <div class="hero-wrapper">
-          <div class="hero-search">
+          <div data-aos="fade-right data-aos="fade-in" class="hero-search">
             <div class="hero-content">
               <h1 class="hero-content-text">Are you looking</h1>
               <h1 class="hero-content-text">for a good book?</h1>
@@ -42,7 +44,7 @@
           </div>
         </div>
 
-        <div class="hero-img">
+        <div class="hero-img" data-aos="fade-left">
           <img
             style="max-width: 50em"
             src="./Static/svg/The Infinite BookShelf black.svg"
@@ -57,6 +59,20 @@
         <div class="resultContainer"></div>
       </div>
     </main>
+
+    <div class="loading"></div>
+
+    <footer>
+      <div class="totop">
+        <a class="btn btn-totop" href="#nav">
+          To Top
+        </a>
+      </div>
+    </footer>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

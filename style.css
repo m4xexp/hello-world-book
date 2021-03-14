@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +13,23 @@
   font-family: "DotGothic16", sans-serif;
   font-size: 20px;
 }
+
+.loading {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(44, 44, 44, 0.575);
+  background-image: url("https://i.stack.imgur.com/MnyxU.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* header {
+  background-color: rgba(0, 0, 0, 0.822);
+} */
 
 a {
   text-decoration: none;
@@ -92,4 +115,60 @@ input[type="button"] {
 
 .hero-img {
   margin-left: 20px;
+}
+
+/* .container {
+  
+} */
+
+.resultContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 10px 15px;
+  border: 1px solid;
+  margin-top: 50px;
+}
+
+.card-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 25px;
+}
+
+.btn {
+  padding: 5px;
+  color: black;
+  font-size: 15px;
+}
+
+.card-content-price {
+  margin-bottom: 15px;
+}
+
+.btn-viewbook {
+  box-shadow: 2.5px 5px;
+  border: 1px solid;
+}
+
+.totop {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.btn-totop {
+  color: black;
+  box-shadow: 2.5px 5px;
+  border: 1px solid;
 }

@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 20px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 10px 15px;
+  border: 1px solid;
+}
+
+.card-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 25px;
+}
+
+.btn {
+  padding: 5px;
+  color: black;
+  font-size: 15px;
+}
+
+/* .btn:hover {
+  
+} */
+
+.btn-viewbook {
+  box-shadow: 2.5px 5px;
+  border: 1px solid;
+}
