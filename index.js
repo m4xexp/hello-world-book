@@ -41,7 +41,7 @@ async function FetchData() {
       return res.json();
     });
 
-    console.log(res.books);
+    // console.log(res.books);
     return (resultContainer.innerHTML = res.books
       .map((book, index) => {
         return `<div class="card-container">
